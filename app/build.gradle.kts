@@ -12,8 +12,8 @@ android {
         applicationId = "com.jacob.yeahokso"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "3"
     }
 
     buildTypes {

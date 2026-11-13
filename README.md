@@ -1,7 +1,7 @@
 # YeahOKSo
 
 Single-screen Android app (Kotlin, Jetpack Compose). Male/Female toggle plus three buttons:
-So, Yeah / OK (random each tap), and Yeah OK So. Speaks with the phone's built-in text-to-speech.
+So (says "So" 95% of the time, "OK" 5%), Yeah / OK ("Yeah so" or "OK so", 50/50), and Yeah OK So ("Yeah OK so" or "OK yeah so", 50/50). Speaks with the phone's built-in text-to-speech.
 
 Build: open in Android Studio, sync, run on a device.
 

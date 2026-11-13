@@ -205,7 +205,10 @@ fun HomeScreen() {
 
         Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
             OutlinedButton(
-                onClick = { player.speak(voice, "So") },
+                onClick = {
+                    val word = if (Random.nextFloat() < 0.95f) "So" else "OK"
+                    player.speak(voice, word)
+                },
                 modifier = Modifier.fillMaxWidth().height(72.dp),
                 shape = RoundedCornerShape(16.dp),
                 border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
@@ -213,8 +216,8 @@ fun HomeScreen() {
 
             OutlinedButton(
                 onClick = {
-                    val word = if (Random.nextBoolean()) "Yeah" else "OK"
-                    player.speak(voice, word)
+                    val phrase = if (Random.nextBoolean()) "Yeah so" else "OK so"
+                    player.speak(voice, phrase)
                 },
                 modifier = Modifier.fillMaxWidth().height(72.dp),
                 shape = RoundedCornerShape(16.dp),
@@ -222,7 +225,10 @@ fun HomeScreen() {
             ) { Text("Yeah / OK", fontSize = 20.sp, fontWeight = FontWeight.Medium) }
 
             Button(
-                onClick = { player.speak(voice, "Yeah OK So") },
+                onClick = {
+                    val phrase = if (Random.nextBoolean()) "Yeah OK so" else "OK yeah so"
+                    player.speak(voice, phrase)
+                },
                 modifier = Modifier.fillMaxWidth().height(72.dp),
                 shape = RoundedCornerShape(16.dp),
                 colors = ButtonDefaults.buttonColors(
