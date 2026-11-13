@@ -219,7 +219,7 @@ fun HomeScreen() {
                 modifier = Modifier.fillMaxWidth().height(72.dp),
                 shape = RoundedCornerShape(16.dp),
                 border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
-            ) { Text("Yeah or OK", fontSize = 20.sp, fontWeight = FontWeight.Medium) }
+            ) { Text("Yeah / OK", fontSize = 20.sp, fontWeight = FontWeight.Medium) }
 
             Button(
                 onClick = { player.speak(voice, "Yeah OK So") },
